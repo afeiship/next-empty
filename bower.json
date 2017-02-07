@@ -1,0 +1,29 @@
+{
+  "name": "angular-admin-ui",
+  "description": "Admin ui based on angular 1.x.",
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "homepage": "https://github.com/afeiship/angular-admin-ui",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ],
+  "dependencies": {
+    "moment": "^2.14.1",
+    "angular-ui-router": "ui-router#^0.3.1",
+    "angular": "^1.5.8",
+    "ionic": "^1.3.1"
+  }
+}
