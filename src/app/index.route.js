@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('dacangRemix')
+    .module('angularAdminUi')
     .config(routerConfig);
 
   /** @ngInject */

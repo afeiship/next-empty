@@ -5,7 +5,7 @@
   'use strict';
 
   angular
-    .module('dacangRemix')
+    .module('angularAdminUi')
     .service('AppService', AppService);
 
   /** @ngInject */
