@@ -3,7 +3,8 @@
 
   angular
     .module('angularAdminUi', [
-      'ui.router'
+      'ui.router',
+      'mui'
     ]);
 
 })();

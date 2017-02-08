@@ -1,8 +1,20 @@
 <div class="wrapper">
-  <main-header></main-header>
-  <div class="main-content row">
-    <main-sidebar></main-sidebar>
-    <article ui-view="permission" class="col-9 content-wrapper"></article>
-  </div>
+  <mui-appbar class="main-header">
+    <table width="100%">
+      <tr style="vertical-align: middle;">
+        <td class="mui--appbar-height">管理员你好</td>
+        <td class="mui--appbar-height" style="text-align: right;">登录/退出</td>
+      </tr>
+    </table>
+  </mui-appbar>
+
+  <mui-row class="main-content">
+    <mui-col md="4">
+      <main-sidebar></main-sidebar>
+    </mui-col>
+    <mui-col md="8">
+      <article ui-view="permission" class="col-9 content-wrapper"></article>
+    </mui-col>
+  </mui-row>
   <main-footer></main-footer>
 </div>
