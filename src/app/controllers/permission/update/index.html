@@ -1,0 +1,30 @@
+<article id="permission_list_view">
+  <header class="view-title">
+    后台人员权限管理-编辑
+  </header>
+  <section class="content">
+
+    <form name="createForm" class="form-horizontal col-lg-3" ng-submit="update.doUpdate()">
+      <div class="form-group">
+        <label for="realname">姓名:</label>
+        <input type="text" ng-model="update.user.realname" class="form-control" id="realname" placeholder="如:张三" required >
+      </div>
+      <div class="form-group">
+        <label for="phone">手机号:</label>
+        <input type="text" ng-model="update.user.mobile" class="form-control" id="phone" placeholder="11位手机号,如:1311023251" maxlength="11" required>
+      </div>
+      <div class="form-group">
+        <label for="sub-phone">分机号:</label>
+        <input type="text" ng-model="update.user.extension_number" class="form-control" id="sub-phone" placeholder="分机号" required>
+      </div>
+      <div class="form-group">
+        <button type="submit" style="margin-left:0;" class="btn btn-primary col-lg-4"
+                ng-disabled="createForm.$invalid"
+        >修改
+        </button>
+        <button type="reset" class="btn btn-default col-lg-4">重写</button>
+      </div>
+    </form>
+
+  </section>
+</article>

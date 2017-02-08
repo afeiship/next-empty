@@ -1,0 +1,70 @@
+<header class="content-header">
+  后台人员权限管理_列表页
+  <div class="pull-right">
+    <button class="btn btn-primary" ng-click="list.doCreate()">添加账号</button>
+  </div>
+</header>
+
+
+<section class="content">
+
+
+  <!--filter-area start-->
+  <div class="row filter-area">
+    <div class="col-xs-4">
+      <input type="text" ng-model="list.keywords" class="form-control" placeholder="姓名/手机号/分机号">
+    </div>
+    <button type="button" class="btn btn-success col-xs-1" ng-click="list.doSearch()">搜索</button>
+    <button type="button" class="btn btn-default col-xs-1" ng-click="list.doClearSearch()">清除</button>
+  </div>
+  <!--filter-area end-->
+
+  <div class="blank10"></div>
+
+  <!--list-detail start-->
+  <div class="list-detail">
+    <table class="table table-condensed">
+      <thead>
+      <tr class="bg-info">
+        <th width="20%">姓名</th>
+        <th width="20%">手机号</th>
+        <th width="20%">分机号</th>
+        <th width="40%">操作</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr ng-repeat="item in list.list" ng-if="list.list.length>0">
+        <td>{{item.realname}}</td>
+        <td>{{item.mobile}}</td>
+        <td>{{item.extension_number}}</td>
+        <td>
+          <button class="btn btn-primary" ng-click="list.doUpdate(item.user_id)">修改详情</button>
+          <button class="btn btn-success" ng-click="list.doResetPassword(item.user_id)">重置密码</button>
+          <button class="btn btn-danger" ng-click="list.doCloseAccount(item.user_id)">关闭账号</button>
+        </td>
+      </tr>
+      <tr ng-if="list.list==0">
+        <td colspan="5">
+          <div class="alert alert-success row" role="alert">
+            <p>
+                <span>
+                  <i class="glyphicon glyphicon-sunglasses"></i> 啥也木有~
+                </span>
+              <button type="button" class="btn btn-success" ng-click="list.doClearSearch()">
+                重新搜索吧
+              </button>
+            </p>
+          </div>
+        </td>
+      </tr>
+
+
+      </tbody>
+    </table>
+
+  </div>
+  <!--list-detail end-->
+
+
+</section>

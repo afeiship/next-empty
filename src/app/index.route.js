@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   angular
@@ -19,7 +19,35 @@
         templateUrl: 'app/controllers/errors/index.html',
         controller: 'ErrorsController',
         controllerAs: 'vm'
+      })
+      .state('permission', {
+        url: '/permission',
+        abstract: true,
+        templateUrl: 'app/controllers/permission/index.html',
+        controller: 'PermissionController',
+        controllerAs: 'permission'
+      })
+      .state('permission.list', {
+        url: '/list',
+        views: {
+          'permission': {
+            templateUrl: 'app/controllers/permission/list/index.html',
+            controller: 'PermissionListController',
+            controllerAs: 'list'
+          }
+        }
+      })
+      .state('permission.update', {
+        url: '/update/:user_id',
+        views: {
+          'permission': {
+            templateUrl: 'app/controllers/permission/update/index.html',
+            controller: 'PermissionUpdateController',
+            controllerAs: 'update'
+          }
+        }
       });
+
     $urlRouterProvider.otherwise('/main');
   }
 
