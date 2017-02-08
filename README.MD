@@ -11,3 +11,5 @@ Admin ui based on angular 1.x.
 
 ## backup solution:
 + https://purecss.io/ 
++ https://picturepan2.github.io/spectre/#tables
++ http://bulma.io/
