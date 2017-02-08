@@ -4,4 +4,4 @@ Admin ui based on angular 1.x.
 
 ## resources:
 + https://www.browsersync.io/docs/gulp/
-+ https://github.com/muicss/mui
++ https://github.com/afeiship/angular-mui
