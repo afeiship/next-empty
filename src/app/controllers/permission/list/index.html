@@ -1,29 +1,30 @@
-<header class="content-header">
-  后台人员权限管理_列表页
-  <div class="pull-right">
-    <button class="btn btn-primary" ng-click="list.doCreate()">添加账号</button>
-  </div>
-</header>
-
-
-<section class="content">
+<mui-panel>
+  <header class="content-header">
+    后台人员权限管理_列表页
+    <mui-divider></mui-divider>
+    <div class="pull-right">
+      <mui-button color="primary">添加账号</mui-button>
+    </div>
+  </header>
 
 
   <!--filter-area start-->
-  <div class="row filter-area">
-    <div class="col-xs-4">
-      <input type="text" ng-model="list.keywords" class="form-control" placeholder="姓名/手机号/分机号">
-    </div>
-    <button type="button" class="btn btn-success col-xs-1" ng-click="list.doSearch()">搜索</button>
-    <button type="button" class="btn btn-default col-xs-1" ng-click="list.doClearSearch()">清除</button>
+
+  <div class="col-xs-4">
+    <mui-input ng-model="list.keywords" hint="姓名/手机号/分机号"></mui-input>
   </div>
+  <mui-button color="primary">搜索</mui-button>
+  <mui-button color="accent">清除</mui-button>
+
   <!--filter-area end-->
 
   <div class="blank10"></div>
 
   <!--list-detail start-->
+
+
   <div class="list-detail">
-    <table class="table table-condensed">
+    <table class="mui-table mui-table--bordered">
       <thead>
       <tr class="bg-info">
         <th width="20%">姓名</th>
@@ -39,9 +40,9 @@
         <td>{{item.mobile}}</td>
         <td>{{item.extension_number}}</td>
         <td>
-          <button class="btn btn-primary" ng-click="list.doUpdate(item.user_id)">修改详情</button>
-          <button class="btn btn-success" ng-click="list.doResetPassword(item.user_id)">重置密码</button>
-          <button class="btn btn-danger" ng-click="list.doCloseAccount(item.user_id)">关闭账号</button>
+          <mui-button color="primary" ng-click="list.doUpdate(item.user_id)">修改详情</mui-button>
+          <button color="success" ng-click="list.doResetPassword(item.user_id)">重置密码</button>
+          <button color="danger" ng-click="list.doCloseAccount(item.user_id)">关闭账号</button>
         </td>
       </tr>
       <tr ng-if="list.list==0">
@@ -51,9 +52,7 @@
                 <span>
                   <i class="glyphicon glyphicon-sunglasses"></i> 啥也木有~
                 </span>
-              <button type="button" class="btn btn-success" ng-click="list.doClearSearch()">
-                重新搜索吧
-              </button>
+              <mui-button>重新搜索吧</mui-button>
             </p>
           </div>
         </td>
@@ -67,4 +66,4 @@
   <!--list-detail end-->
 
 
-</section>
+</mui-panel>

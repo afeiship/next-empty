@@ -24,6 +24,7 @@
     "moment": "^2.14.1",
     "angular-ui-router": "ui-router#^0.3.1",
     "angular": "^1.5.8",
-    "angular-mui": "afeiship/angular-mui"
+    "angular-mui": "afeiship/angular-mui",
+    "webkit-sassui-layout-tmb": "afeiship/webkit-sassui-layout-tmb"
   }
 }
