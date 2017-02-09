@@ -6,7 +6,7 @@
     .controller('PermissionListController', PermissionListController);
 
   /** @ngInject */
-  function PermissionListController($log, $scope, $state) {
+  function PermissionListController($log, AppService) {
     var vm = this;
 
     vm.keywords = '';
@@ -17,7 +17,8 @@
     init();
 
     function doCreate() {
-      $state.go('permission.create');
+      //$state.go('permission.create');
+      AppService.toast('To create page!')
     }
 
     function init() {

@@ -33,7 +33,7 @@
           'permission': {
             templateUrl: 'app/controllers/permission/list/index.html',
             controller: 'PermissionListController',
-            controllerAs: 'list'
+            controllerAs: 'vm'
           }
         }
       })
@@ -43,7 +43,7 @@
           'permission': {
             templateUrl: 'app/controllers/permission/update/index.html',
             controller: 'PermissionUpdateController',
-            controllerAs: 'update'
+            controllerAs: 'vm'
           }
         }
       });

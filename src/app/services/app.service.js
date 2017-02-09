@@ -1,7 +1,7 @@
 /**
  * Created by 13501 on 2016/7/25.
  */
-(function() {
+(function () {
   'use strict';
 
   angular
@@ -9,10 +9,19 @@
     .service('AppService', AppService);
 
   /** @ngInject */
-  function AppService($state, $rootScope) {
-    this.isLogin = function() {
+  function AppService($state, $rootScope, nxToast) {
+
+    this.isLogin = function () {
       return false;
     };
+
+    this.toast = function (inMsg) {
+      nxToast.show({
+        cssClass: 'my-toast',
+        msg: inMsg
+      });
+    }
+
   }
 
 
