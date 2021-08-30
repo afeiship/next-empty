@@ -1,15 +1,34 @@
-#angular-admin-ui
-Admin ui based on angular 1.x.
+# next-empty
+> Empty array or object.
 
+[![version][version-image]][version-url]
+[![license][license-image]][license-url]
+[![size][size-image]][size-url]
+[![download][download-image]][download-url]
 
-## resources:
-+ https://www.browsersync.io/docs/gulp/
-+ https://github.com/afeiship/angular-mui
+## installation
+```bash
+npm install -S @jswork/next-empty
+```
 
-+ https://www.muicss.com/docs/v1/angular/appbar
+## usage
+```js
+import '@jswork/next-empty';
 
+//DOCS here!
+```
 
-## backup solution:
-+ https://purecss.io/ 
-+ https://picturepan2.github.io/spectre/#tables
-+ http://bulma.io/
+## license
+Code released under [the MIT license](https://github.com/afeiship/next-empty/blob/master/LICENSE.txt).
+
+[version-image]: https://img.shields.io/npm/v/@jswork/next-empty
+[version-url]: https://npmjs.org/package/@jswork/next-empty
+
+[license-image]: https://img.shields.io/npm/l/@jswork/next-empty
+[license-url]: https://github.com/afeiship/next-empty/blob/master/LICENSE.txt
+
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/next-empty
+[size-url]: https://github.com/afeiship/next-empty/blob/master/dist/next-empty.min.js
+
+[download-image]: https://img.shields.io/npm/dm/@jswork/next-empty
+[download-url]: https://www.npmjs.com/package/@jswork/next-empty
