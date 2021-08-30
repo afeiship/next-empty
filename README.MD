@@ -15,7 +15,8 @@ npm install -S @jswork/next-empty
 ```js
 import '@jswork/next-empty';
 
-//DOCS here!
+nx.empty({ name:'afei' });   // {}
+nx.empty([1,2,3]);           // []
 ```
 
 ## license
